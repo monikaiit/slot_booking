@@ -17,7 +17,7 @@ router.post("/create-slot", async (req, res) => {
 
 // View available slots
 router.get("/slots", async (req, res) => {
-  const slots = await Slot.find({ status: "available" });
+  const slots = await Slot.find({ });
   res.json(slots);
 });
 
